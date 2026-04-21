@@ -26,68 +26,87 @@ Go to: https://colab.research.google.com
 Upload the provided `.ipynb` file into Colab.
 
 ---
+### 3. Upload Dataset Files
 
+Run the first cell:
+
+```python
+from google.colab import files
+files.upload()
 ### 3. Upload Dataset Files
 Run the first cell:
 
 ```python
 from google.colab import files
 files.upload()
-
 Then upload the following files:
+- `historical_data.csv`
+- `fear_greed_index.csv`
 
-historical_data.csv
-fear_greed_index.csv
+---
 
-4. Run the Notebook
+### 4. Run the Notebook
 
 Execute all cells step by step:
 
-Data cleaning and preprocessing
-Timestamp conversion and dataset alignment
-Feature engineering (PnL, win rate, trade size, etc.)
-Data analysis and visualizations
-Trader segmentation using K-Means clustering
-Predictive modeling using Random Forest
-5. Launch the Dashboard (Gradio)
+- Data cleaning and preprocessing  
+- Timestamp conversion and dataset alignment  
+- Feature engineering (PnL, win rate, trade size, etc.)  
+- Data analysis and visualizations  
+- Trader segmentation using K-Means clustering  
+- Predictive modeling using Random Forest  
+
+
+### 5. Launch the Dashboard (Gradio)
 
 In the final cell, a Gradio interface will be generated.
 
 👉 Click on the provided link to open the interactive dashboard.
 
 The dashboard allows you to:
+- Analyze trader performance based on sentiment  
+- View average PnL and win rate  
+- Predict whether a trade will be profitable  
 
-Analyze trader performance based on sentiment
-View average PnL and win rate
-Predict whether a trade will be profitable
+---
 
-📈 Key Features
-Sentiment-based performance analysis
-Trader behavior insights
-K-Means clustering for trader segmentation
-Random Forest model for prediction
-Interactive dashboard using Gradio
+## 📈 Key Features
 
-💡 Key Insights
-Profitability is highest during Greed sentiment
-Win rate decreases during Fear conditions
-Neutral markets show the weakest performance
-Efficient traders outperform high-capital traders
+- Sentiment-based performance analysis  
+- Trader behavior insights  
+- K-Means clustering for trader segmentation  
+- Random Forest model for prediction  
+- Interactive dashboard using Gradio  
 
-🚀 Strategy Recommendations
-Increase exposure during Greed, focusing on high-quality trades
-Reduce leverage and risk during Fear
-Avoid trading in Neutral sentiment
-Focus on trade efficiency rather than increasing capital
+## 💡 Key Insights
 
-🛠️ Tech Stack
-Python (Pandas, NumPy)
-Matplotlib
-Scikit-learn
-Gradio
+- Profitability is highest during **Greed sentiment**  
+- Win rate decreases during **Fear conditions**  
+- Neutral markets show the weakest performance  
+- Efficient traders outperform high-capital traders  
 
-📌 Note
+---
 
-Ensure both CSV files are uploaded before running the notebook.
-The dashboard will only work after executing all cells successfully.
+## 🚀 Strategy Recommendations
+
+- Increase exposure during Greed, focusing on high-quality trades  
+- Reduce leverage and risk during Fear  
+- Avoid trading in Neutral sentiment  
+- Focus on trade efficiency rather than increasing capital  
+
+---
+
+## 🛠️ Tech Stack
+
+- Python (Pandas, NumPy)  
+- Matplotlib  
+- Scikit-learn  
+- Gradio  
+
+---
+
+## 📌 Note
+
+- Ensure both CSV files are uploaded before running the notebook  
+- The dashboard will only work after executing all cells successfully  
 
